@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Inter";
+}
+.bg {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -2;
+}
+/* .bg img {
+  width: 50%;
+} */
+.left {
+  width: 50%;
+  background: url("./images/left.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.right {
+  width: 50%;
+  background: url("./images/right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.contact_link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171142;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 87px;
+  text-align: center;
+  color: #171142;
+  margin-bottom: 16px;
+}
+.content p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #74708e;
+  max-width: 780px;
+}
+.content button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: #3472ed;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  text-align: center;
+  margin: 24px 0 40px;
+}
+.content button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.main img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .content h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content button {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 15px;
+  }
+  .content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header {
+    margin-bottom: 15px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .contact_link {
+    font-size: 16px;
+  }
+  .content h1 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .content p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .content button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
