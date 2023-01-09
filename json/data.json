@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "code": "ru",
+      "contact": "Контакты",
+      "main_text": "Новый стандарт в Интернете Платежи",
+      "sub_text": "Мы принципиально не используем роботов и автоответчики в сопровождении и помощи клиентам — только живые, компетентные люди.",
+      "btn_text": "Начать сейчас"
+    },
+    {
+      "id": "2",
+      "code": "en",
+      "contact": "Contacts",
+      "main_text": "New standard in Internet Payments",
+      "sub_text": "We do not use robots and autoresponders in supporting and helping customers - only live, competent people.",
+      "btn_text": "Start now"
+    },
+    {
+      "id": "3",
+      "code": "uz",
+      "contact": "Aloqa",
+      "main_text": "Internet to'lovlar standarti",
+      "sub_text": "Biz mijozlarga yordam berishda robotlardan foydalanmaymiz - faqat jivoy, kompetent odamlar.",
+      "btn_text": "Hozir boshlang"
+    }
+  ]
+}

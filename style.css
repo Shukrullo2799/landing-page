@@ -49,6 +49,7 @@ body {
   line-height: 24px;
   color: #171142;
   text-decoration: none;
+  margin-right: 28px;
 }
 .content {
   display: flex;
@@ -88,7 +89,80 @@ body {
 .main img {
   width: 100%;
 }
+.box {
+  display: flex;
+  align-items: center;
+}
+.dropdown {
+  min-width: 10em;
+  position: relative;
+}
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.selected {
+  display: flex;
+  align-items: center;
+}
+.selected img {
+  margin-right: 8px;
+}
+.select-clicked {
+  border: 2px solid #3472ed;
+  box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.2);
+}
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #000;
+  transition: 0.3s;
+}
+.caret-rotate {
+  transform: rotate(180deg);
+}
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  background: #fff;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu li img {
+  margin-right: 8px;
+}
+.active {
+  background: #3472ed;
+  color: #fff;
+}
+.menu-open {
+  opacity: 1;
+  display: block;
+}
 
+.lang_img {
+  width: 20px;
+  margin-right: 4px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 1024px) {
   .header {
     margin-bottom: 30px;
@@ -127,6 +201,7 @@ body {
   }
   .contact_link {
     font-size: 16px;
+    margin-right: 16px;
   }
   .content h1 {
     font-size: 22px;

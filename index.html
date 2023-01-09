@@ -15,28 +15,75 @@
     <div class="bg">
       <div class="left"></div>
       <div class="right"></div>
-      <!-- <img src="./images/left.svg" alt="" />
-      <img src="./images/right.svg" alt="" /> -->
     </div>
     <div class="container">
       <header class="header">
         <img class="logo" src="./images/logo.svg" alt="logo" />
-        <a href="#" class="contact_link">Контакты</a>
+        <div class="box">
+          <a href="#" class="contact_link">Контакты</a>
+
+          <!-- <div class="selected">
+            <img class="lang_img" src="./images/lang/ru.svg" alt="" />
+            <span>Русский</span>
+          </div>
+          <ul class="select">
+            <li>
+              <img class="lang_img" src="./images/lang/ru.svg" alt="" />
+              <span>Русский</span>
+            </li>
+            <li>
+              <img class="lang_img" src="./images/lang/en.svg" alt="" />
+              <span>English</span>
+            </li>
+          </ul> -->
+
+          <div class="dropdown">
+            <div class="select">
+              <div class="selected">
+                <img class="lang_img" src="./images/lang/ru.svg" alt="" />
+                <span>Русский</span>
+              </div>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li class="active">
+                <img class="lang_img" src="./images/lang/ru.svg" alt="" />
+                <span>Русский</span>
+              </li>
+              <li>
+                <img class="lang_img" src="./images/lang/en.svg" alt="" />
+                <span>English</span>
+              </li>
+              <li>
+                <img class="lang_img" src="./images/lang/uz.svg" alt="" />
+                <span>O'zbekcha</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <select class="select">
+            <option value="ru">
+              <span> Русский </span>
+            </option>
+            <option value="en">English</option>
+          </select> -->
+        </div>
       </header>
       <main class="main">
         <div class="container">
           <div class="content">
-            <h1>Новый стандарт в Интернете Платежи</h1>
-            <p>
+            <h1 class="main_text">Новый стандарт в Интернете Платежи</h1>
+            <p class="sub_text">
               Мы принципиально не используем роботов и автоответчики в сопровождении и помощи клиентам — только живые, компетентные люди.
             </p>
             <button>
-              <a href="https://app.ongila.com"> Начать сейчас </a>
+              <a href="https://app.ongila.com" class="btn_text"> Начать сейчас </a>
             </button>
           </div>
           <img src="./images/2.png" alt="" />
         </div>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
